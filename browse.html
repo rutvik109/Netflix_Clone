@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="styles/browse.css" />
+  </head>
+
+  <body>
+    <div class="modal">
+      <div class="main">
+        <div class="close" onclick="close_modal()">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="submain1">
+          <video controls>
+            <source src="img//video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="submain2">
+          <h1>Luis Miguel</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            quas exercitationem vel beatae deleniti, consectetur similique
+            asperiores nam tempora. Impedit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVIGATION SECTION -->
+    <div class="nav" id="nav">
+      <img
+        src="img//netflix-logo.png"
+        alt=""
+        class="nav__logo"
+        onclick="home()"
+      />
+    </div>
+
+    <!-- HEADER SECTION -->
+    <div class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Watch Joker Now</h1>
+        <div class="banner__description">
+          Forever alone in a crowd, failed comedian Arthur Fleck seeks
+          connection as he walks the streets of Gotham City. Arthur wears two
+          masks - the one he paints for the day job as a clown, and the disguise
+          he projects in a futile attempt to feel like he's part of the world
+          around him.
+        </div>
+        <div class="banner__buttons">
+          <button class="banner__button">Play</button>
+        </div>
+      </div>
+      <!-- <div class="banner--fadeBottom"></div> -->
+    </div>
+    <!-- DRAMA SECTION -->
+    <div class="row">
+      <h2>DRAMA</h2>
+      <div class="row__posters">
+        <img
+          src="img//drama1.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//drama2.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//drama3.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//drama4.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//drama5.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+      </div>
+    </div>
+    <!-- <div class="card">
+      <div class="info">
+        <h2>Fight Club</h2>
+        <p>
+          Unhappy with his capitalistic lifestyle, a white-collared insomniac
+          forms an underground fight club with Tyler, a careless soap salesman.
+          Soon, their venture spirals down into something sinister.
+        </p>
+        
+        <button class="banner__button">Play</button>
+      </div>
+      <div class="image">
+        <img src="img/drama1_large.jpg" alt="" />
+      </div>
+    </div> -->
+    <!-- THRILLER SECTION -->
+
+    <div class="row">
+      <h2>THRILLER</h2>
+      <div class="row__posters">
+        <img
+          src="img//thriller1.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//thriller2.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//thriller3.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//thriller4.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//thriller5.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+      </div>
+    </div>
+
+    <!-- CHILDREN SECTION -->
+    <div class="row">
+      <h2>CHILDREN</h2>
+      <div class="row__posters">
+        <img
+          src="img//childern1.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//childern2.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//childern3.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//childern4.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//childern5.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+      </div>
+    </div>
+
+    <!-- SUSPENSE SECTION -->
+    <div class="row">
+      <h2>SUSPENSE</h2>
+      <div class="row__posters">
+        <img
+          src="img//suspense1.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//suspense2.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//suspense3.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//suspense4.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//suspense5.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+      </div>
+    </div>
+
+    <!-- ROMANCE SECTION -->
+    <div class="row">
+      <h2>ROMANCE</h2>
+      <div class="row__posters">
+        <img
+          src="img//romance1.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//romance2.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//romance3.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//romance4.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+        <img
+          src="img//romance5.jpg"
+          alt=""
+          class="row__poster"
+          onclick="open_modal(this)"
+        />
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+
+    <div class="showcase-footer">
+      <div class="footer-container">
+        <p>Questions? Call 000-800-040-1843 FAQ</p>
+
+        <div class="footer-cols">
+          <ul>
+            <li>FAQ</li>
+            <li>Cookie Preferences</li>
+          </ul>
+          <ul>
+            <li>Help Center</li>
+            <li>Corporate Information</li>
+          </ul>
+          <ul>
+            <li>terms of Use</li>
+          </ul>
+          <ul>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="lang-select">
+          <a href="#" class="btn btn1"
+            ><i class="fa-solid fa-globe"></i
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;English&nbsp;&nbsp;<i
+              class="fa-solid fa-caret-down"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="browse.js"></script>
+  </body>
+</html>
