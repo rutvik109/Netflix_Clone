@@ -207,18 +207,6 @@ body::-webkit-scrollbar {
   transition: all 0.2s;
 }
 
-.banner--fadeBottom {
-  margin-top: 145px;
-  height: 7.4rem;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(37, 37, 37, 0.61),
-    #111
-  );
-  /* display: none; */
-}
-
 .nav__logo {
   height: 50px;
   cursor: pointer;
@@ -269,7 +257,7 @@ body::-webkit-scrollbar {
   font-size: 13px;
 }
 
-.lang-select {
+/* .lang-select {
   margin-top: 2rem;
 }
 .lang-select .btn {
@@ -292,4 +280,51 @@ body::-webkit-scrollbar {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   margin-right: 2rem;
+} */
+.footer_row_3 {
+  margin-top: 10px;
+}
+
+.footer__row__3 > .dropdown__container {
+  width: fit-content;
+  border: 1px solid #757575;
+  color: #757575;
+  padding: 0.2rem;
+}
+
+.footer__row__3 > .dropdown__container > .language__drop__down {
+  color: #757575;
+  background: black;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  .banner__contents {
+    margin-left: 20px;
+    padding-top: 140px;
+    /* height: 190px; */
+  }
+
+  .banner__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 70px;
+  }
+
+  .banner__description {
+    width: 30rem;
+    line-height: 1.1;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .banner__button {
+    font-weight: 500;
+  }
 }

@@ -216,3 +216,61 @@ input[type="password"] {
   border-radius: 2px;
   margin-right: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .showcase-top {
+    text-align: center;
+  }
+
+  .showcase-footer .footer-container {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  .showcase-footer .footer-container p {
+    font-size: 1em;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 1rem;
+    margin: 0 50px;
+  }
+
+  .footer-cols li {
+    line-height: 1.2;
+    list-style: none;
+    font-size: 13px;
+  }
+
+  .lang-select {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .lang-select .btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .lang-select .btn:hover {
+    opacity: 0.9;
+  }
+
+  .lang-select .btn.btn1 {
+    padding: 0.5rem 0.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    margin-right: 2rem;
+  }
+}

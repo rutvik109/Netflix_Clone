@@ -1,15 +1,24 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+let accordian = document.getElementsByClassName("FAQ__title");
 
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+for (let i = 0; i < accordian.length; i++) {
+  accordian[i].addEventListener("click", function () {
+    if (this.childNodes[1].classList.contains("fa-plus")) {
+      this.childNodes[1].classList.remove("fa-plus");
+      this.childNodes[1].classList.add("fa-times");
     } else {
-      panel.style.display = "block";
+      this.childNodes[1].classList.remove("fa-times");
+      this.childNodes[1].classList.add("fa-plus");
+    }
+
+    let content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 }
 
+function signin() {
+  window.location = "signup.html";
+}
